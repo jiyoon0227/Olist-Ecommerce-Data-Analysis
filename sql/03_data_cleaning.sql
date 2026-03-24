@@ -13,7 +13,7 @@ USE olist_project;
 DROP TABLE IF EXISTS orders_clean;
 
 CREATE TABLE orders_clean AS
-SELECT
+SELECT DISTINCT
     order_id,
     customer_id,
     order_status,
